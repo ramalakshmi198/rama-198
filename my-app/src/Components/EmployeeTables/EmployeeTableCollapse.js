@@ -16,7 +16,7 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { useEffect,useState } from 'react';
 
 
-const UrlTwo="https://hub.dummyapis.com/employee?noofRecords=<pageLength>&idStarts=<idStart>"
+const UrlOne="https://hub.dummyapis.com/employee?noofRecords=<pageLength>&idStarts=<idStart>"
 
 function createData(name, calories, fat, carbs, protein, price) {
   return {
@@ -44,7 +44,7 @@ function createData(name, calories, fat, carbs, protein, price) {
 function Row(props) {
     // GET with fetch API
  useEffect(() => {
-     fetch(UrlTwo)
+     fetch(UrlOne)
          .then((res) => res.json())
          .then((data) => {
             setPosts(data);
