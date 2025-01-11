@@ -85,7 +85,7 @@ function Row(props) {
 
   return (
     <React.Fragment>
-        {isLoading && <p>Loading...</p>}
+        {isLoading && <p> Data Loading...</p>}
 
       <TableRow sx={{ '& > *': { borderBottom: 'unset' } }}>
         <TableCell>
