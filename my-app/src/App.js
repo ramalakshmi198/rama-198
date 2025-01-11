@@ -14,8 +14,8 @@ function App() {
     <Box className="App">
       {/* <SideNav/> */}
       <Header/>
-    <EmployeeTable/>
-    {/* <EmployeeTableCollapse/> */}
+    {/* <EmployeeTable/> */}
+    <EmployeeTableCollapse/>
 
     
     
