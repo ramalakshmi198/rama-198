@@ -1,12 +1,6 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import { Container } from '@mui/material';
+import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid2';
 import ProductDetails from  './ProductDetails'
 
@@ -25,11 +19,12 @@ useEffect(()=>{
   
   return (
     <>
-    <h1>Sample Shop</h1>
-   <Container>
-    <Grid container spacing={3}>
+   {/* <Container> */}
+   <Paper elevation={10} style={{padding:'1.5em'}}>
+   <Grid container direction='row' spacing={2} alignItems="stretch">
         {products.map(product=>(
-            <Grid item key={product.id} xs={12} md={6} >
+          // <Grid item style={{height:'100%', width:'50%'}}   xs={12} md={6}key={product.id}> 
+            <Grid item key={product.id} xs={12} md={6} > 
 <ProductDetails product={product}/>
 
             </Grid>
@@ -39,7 +34,8 @@ useEffect(()=>{
         }
 
     </Grid>
-   </Container>
+    </Paper>
+   {/* </Container> */}
     
     </>
   )

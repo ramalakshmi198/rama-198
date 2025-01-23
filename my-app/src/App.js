@@ -4,8 +4,9 @@ import * as React from 'react';
 import Products from './Components/Products';
 import { Route,Routes,BrowserRouter as Router } from 'react-router-dom';
 import Cart from './Components/Cart';
-import Dashboard from './Components/Dashboard';
 import RootLayout from './Components/RootLayout';
+import NavBarPanel from './Components/NavBarPanel';
+
 
 
  
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <Box className="App">
-<h1>I AM INN</h1>
+      <NavBarPanel />
 <Router>
       <Routes>
         <Route path="/" element={<RootLayout />} />

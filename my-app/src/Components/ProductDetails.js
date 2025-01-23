@@ -14,12 +14,11 @@ const ProductDetails = (product) => {
     <div className="col-md-3" >
     <Card key={items.product.id}
     // sx={{ maxWidth: 345 }} 
-    style={{width:'18rem'}}>
+    style={{width:'18rem',height:'20rem'}}>
         <div className="text-center">
     <CardMedia
-
-
-//     //   sx={{ height: 160 }}
+alignItems="stretch"
+      sx={{ mt:2 }}
 style={{width:'100px',height:'100px',marginLeft:'100px'}}
 
       image={items.product.image}
@@ -27,7 +26,7 @@ style={{width:'100px',height:'100px',marginLeft:'100px'}}
     />
     </div>
     <CardContent>
-      <Typography gutterBottom variant="h6" component="div">
+      <Typography gutterBottom variant="h9" component="div" >
       {items.product.title}
       </Typography>
       <Typography variant="body2" sx={{ color: 'text.secondary' }}>
