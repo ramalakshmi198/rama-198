@@ -22,31 +22,7 @@ useEffect(()=>{
     },[])
    
 
-const productDashboard=products.map(product=>(
-    <div >
-    <Card key={product.id}sx={{ maxWidth: 345 }}>
-    <CardMedia
-      sx={{ height: 140 }}
-      image={product.image}
-      title={product.title}
-    />
-    <CardContent>
-      <Typography gutterBottom variant="h5" component="div">
-      {product.title}
-      </Typography>
-      <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-        {product.description}
-      </Typography>
-    </CardContent>
-    <CardActions>
-      <Button size="medium">Add To Cart</Button>
-    </CardActions>
-  </Card>
-  </div>
-))
-
-
-    
+  
   return (
     <>
     <h1>Sample Shop</h1>
