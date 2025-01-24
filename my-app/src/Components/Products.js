@@ -3,6 +3,7 @@ import { useState,useEffect } from 'react'
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid2';
 import ProductDetails from  './ProductDetails'
+import Typography from '@mui/material/Typography';
 
 const Products = () => {
 const [products,setProducts]=useState([])
@@ -20,6 +21,7 @@ useEffect(()=>{
   return (
     <>
    {/* <Container> */}
+   <Typography variant='h4' color='black'>Dashboard Details</Typography>
    <Paper elevation={10} style={{padding:'1.5em'}}>
    <Grid container direction='row' spacing={2} alignItems="stretch">
         {products.map(product=>(

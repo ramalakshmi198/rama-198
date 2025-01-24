@@ -5,7 +5,7 @@ const RootLayout=()=>{
 
     return(
         <>  
-           
+           <h1>Welcome to my Redux shop</h1>
         <main>
 <Outlet/>
         </main>
