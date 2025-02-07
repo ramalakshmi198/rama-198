@@ -6,21 +6,25 @@ import { Route,Routes,BrowserRouter as Router } from 'react-router-dom';
 import Cart from './Components/Cart';
 import RootLayout from './Components/RootLayout';
 import NavBarPanel from './Components/NavBarPanel';
+import { Login } from './Components/Login';
 
 
 
  
 
-function App() {
+function App(props) {
 
 
 
   return (
     <Box className="App">
-      <NavBarPanel />
+       {/* <NavBarPanel /> */}
+     
 <Router>
       <Routes>
-        <Route path="/" element={<RootLayout />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<RootLayout />} />
+        
         <Route path="/cart" element={<Cart />} />
         <Route path="/products" element={<Products/>}/>
       </Routes>
