@@ -10,14 +10,16 @@ const NavBarPanel =()=>{
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="static">
             <Toolbar >
-            <Button href="/" color='inherit'>Home</Button> 
 
             <Button href="/products" color='inherit'>Products</Button> 
               <Typography variant="h6" component="div" edge="start" sx={{ flexGrow: 1 }}>
             
               </Typography>
               <Button href="/cart"color="inherit">My Bag 0</Button>
+            <Button href="/" color='inherit'>Log out</Button> 
+
             </Toolbar>
+
           </AppBar>
         </Box>
       );
