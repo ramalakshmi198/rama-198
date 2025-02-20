@@ -8,7 +8,6 @@ import { increment } from './Redux/CounterSlice';
 export const ProductBottom = () => {
 const dispatch = useDispatch()
   const handleClick=()=>{
-    console.log("ADDED To CART BUTTON CLICKED")
 dispatch(increment())
   }
 
