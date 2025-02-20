@@ -4,8 +4,10 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { useSelector } from 'react-redux';
 
 const NavBarPanel =()=>{
+  const updatedCart = useSelector((state)=>state.counter.value)
     return (
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="static">
@@ -15,7 +17,7 @@ const NavBarPanel =()=>{
               <Typography variant="h6" component="div" edge="start" sx={{ flexGrow: 1 }}>
             
               </Typography>
-              <Button href="/cart"color="inherit">My Bag 0</Button>
+              <Button href="/cart"color="inherit">My Bag {updatedCart}</Button>
             <Button href="/" color='inherit'>Log out</Button> 
 
             </Toolbar>
